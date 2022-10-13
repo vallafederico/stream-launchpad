@@ -1,0 +1,82 @@
+/* ------------------------------  Variables */
+:root {
+  /* Colors */
+  --color-black: #111111;
+  --color-white: #dcdcdc;
+  /* Spaces */
+  --space-s: 0.5rem;
+  --space-m: 1rem;
+  --space-l: 2rem;
+}
+
+/* ------------------------------  Fonts */
+@font-face {
+  font-family: "Sohne-web";
+  src: url("/fonts/Sohne-Buch-webh.woff2") format("woff2"),
+    url("/fonts/Sohne-Buch-webh.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gascogne";
+  src: url("/fonts/Gascogne-Light.woff2") format("woff2"),
+    url("/fonts/Gascogne-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---  Global */
+
+body {
+  /* background: var(--color-black); */
+  background-color: black;
+  color: var(--color-white);
+  font-family: "Sohne-web";
+  font-size: 14px;
+}
+
+.f-gs {
+  font-family: "Gascogne";
+}
+
+.f-so {
+  font-family: "Sohne-web";
+}
+
+/* ------------------------------  Webgl */
+[data-gl="c"] {
+  position: fixed;
+  box-sizing: border-box;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: -10;
+  pointer-events: none;
+  /* background: blue; */
+}
+
+/* ------------------------------  Layout */
+main {
+  min-height: 100vh;
+}
+
+.Section {
+  border: 1px solid blue;
+
+  /* margin: var(--space-l) var(--space-l); */
+
+  padding-top: var(--space-l);
+  padding-bottom: var(--space-l);
+}
+
+.c {
+  margin-left: var(--space-l);
+  margin-right: var(--space-l);
+}
+
+/* ------------------------------  ... */
