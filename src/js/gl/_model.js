@@ -1,4 +1,3 @@
-import regeneratorRuntime from "regenerator-runtime/runtime";
 import { Plane, Mesh } from "ogl";
 import Material from "./mat/_model";
 
